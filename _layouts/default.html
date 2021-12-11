@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="Personal Website">
+  <meta name="author" content="Kimon Krenz">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <script src="https://kit.fontawesome.com/4639485e23.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+
+</head>
+<body>
+
+  <div class="container navh" style="border-bottom: 1px solid var(--border);">
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title navbar" style="padding-left: 4%;">
+          <a href="/" style="text-decoration: none;">Kimon Krenz</a>
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <div style="content: url(/images/hamburger.svg);"></div>
+        </label>
+      </div>    
+      <div class="nav-links" style="padding-right: 4%;">
+        <a href="/">About</a>
+        <a href="/research">Research</a>
+        <a href="/teaching">Teaching</a>
+      </div>
+    </div>
+  </div>
+
+<div class="container madjust cheight">
+  {{ content }}
+</div>
+
+<div class="container">
+  <div class="spacer" style="height: 8rem; background-color: var(--background-footer-dark); border-top: solid 1px var(--border-dark);"></div>
+  <div class="five columns linkbar sub top" style="pointer-events: none;">You can reach me at:</div>
+  <a href="mailto:k.krenz@ul.ac.uk"><div class="one columns linkbar">Email</div></a>
+  <a href="https://twitter.com/KimonKrenz" target="_blank"><div class="one columns linkbar">Twitter</div></a>
+  <a href="https://www.linkedin.com/in/kimonkrenz/" target="_blank"><div class="one columns linkbar">LinkedIn</div></a>
+  <a href="https://scholar.google.co.uk/citations?hl=en&user=HeVLqBUAAAAJ" target="_blank"><div class="one columns linkbar">Scholar</div></a>
+  <div class="three columns linkbar remove" style="pointer-events: none;"></div>
+  <div class="spacer sub"></div>
+</div>
+
+</body>
+</html>
